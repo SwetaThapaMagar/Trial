@@ -37,3 +37,19 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def calculate_simple_interest(principal, rate, time):
+
+    simple_interest = (principal * rate * time) / 100
+    return simple_interest
+
+# Taking user input
+P = float(input("Enter the principal amount: "))
+R = float(input("Enter the rate of interest: "))
+T = float(input("Enter the time period in years: "))
+
+# Calculating simple interest
+SI = calculate_simple_interest(P, R, T)
+
+# Displaying the result
+print(f"The Simple Interest is: {SI}")
