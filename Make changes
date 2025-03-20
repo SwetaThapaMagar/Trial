@@ -15,3 +15,25 @@ def multiply():
 # Calling the function for testing
 if __name__ == "__main__":
     multiply()
+def subtract_numbers(a, b):
+    return a - b
+
+def get_number(prompt):
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Invalid input! Please enter a valid number.")
+
+def main():
+    print("Subtraction - Implements the subtraction operation.")
+    
+    num1 = get_number("Enter the first number: ")
+    num2 = get_number("Enter the second number: ")
+    
+    result = subtract_numbers(num1, num2)  # Calculate the result
+
+    print(f"The result of {num1} - {num2} is: {result}")  # Fixed indentation
+
+if __name__ == "__main__":
+    main()
